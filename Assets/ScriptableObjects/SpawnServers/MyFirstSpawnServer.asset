@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6c44e2e8cdd2702a15b9913324970b, type: 3}
+  m_Name: MyFirstSpawnServer
+  m_EditorClassIdentifier: 
+  entities:
+  - entityName: Enemy
+    prefab: {fileID: 1452775309959907060, guid: 59640270e789b610387af4d6f3a03fd3,
+      type: 3}
+    spawnLimit: 10
+    spawnPositions:
+    - {x: 0, y: 11, z: 0}
+    spawnRotations: []
+  - entityName: Player
+    prefab: {fileID: 2536008986472291666, guid: ec9e8efbcee83ba32809390f24bdd120,
+      type: 3}
+    spawnLimit: 1
+    spawnPositions:
+    - {x: 0, y: 0, z: 0}
+    spawnRotations: []
+  - entityName: Laser
+    prefab: {fileID: 5017620990573273403, guid: 57f7ce2343f685f3c90d6496f44dd32a,
+      type: 3}
+    spawnLimit: 30
+    spawnPositions: []
+    spawnRotations: []
+  - entityName: TripleLaser
+    prefab: {fileID: 1171338171915548457, guid: dadc8bd16c2d433299c0246d80095ca9,
+      type: 3}
+    spawnLimit: 30
+    spawnPositions: []
+    spawnRotations: []
+  - entityName: TripleShotPowerUp
+    prefab: {fileID: 7300964131569128456, guid: eb5fe5767ff1f0e999d88a396f341e57,
+      type: 3}
+    spawnLimit: 10
+    spawnPositions: []
+    spawnRotations: []
+  - entityName: SpeedBoostPowerUp
+    prefab: {fileID: 1906995057050116008, guid: 51c085679b1b65f89b0457586e977502,
+      type: 3}
+    spawnLimit: 10
+    spawnPositions: []
+    spawnRotations: []
+  - entityName: ShieldPowerUp
+    prefab: {fileID: 2559195321971716109, guid: 51d23cc93a475323b93812440098f26b,
+      type: 3}
+    spawnLimit: 10
+    spawnPositions: []
+    spawnRotations: []
+  - entityName: Shield
+    prefab: {fileID: 37389827688654817, guid: cf426114e408f74bfa215cd5d79a2cd3, type: 3}
+    spawnLimit: 10
+    spawnPositions: []
+    spawnRotations: []
+  - entityName: Explosion
+    prefab: {fileID: 1711194869530071956, guid: 0ba608b68ddeb9595a7e2c3ede542329,
+      type: 3}
+    spawnLimit: 10
+    spawnPositions: []
+    spawnRotations: []
+  - entityName: Asteroid
+    prefab: {fileID: 4020103598279554537, guid: 428d961c96890bc56a7447f156996700,
+      type: 3}
+    spawnLimit: 10
+    spawnPositions: []
+    spawnRotations: []
+  - entityName: EnemyLaser
+    prefab: {fileID: 3167578810556769760, guid: f100663419222a434bd0743d4427d333,
+      type: 3}
+    spawnLimit: 10
+    spawnPositions: []
+    spawnRotations: []
+  _powerUpSuffix: PowerUp
