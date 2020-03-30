@@ -59,6 +59,7 @@ MonoBehaviour:
   _loopActive: 1
   _minShootTime: 3
   _maxShootTime: 7
+  _laserOffset: {x: 0, y: -0.525, z: 0}
   _touchAttackStrength: 10
   _pointValue: 10
   _deathEvent: {fileID: 11400000, guid: 40da7bb73274b220d9e56e62f9cf4ecb, type: 2}
@@ -195,7 +196,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a885c043fab7e46438bba03ba9dab6bc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 2
   Loop: 0
   Mute: 0

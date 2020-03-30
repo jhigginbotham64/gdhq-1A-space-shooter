@@ -51,7 +51,7 @@ MonoBehaviour:
   _direction: {x: 0, y: 1, z: 0}
   _linearSpeed: 32
   _shootClip: {fileID: 8300000, guid: 75676f361bdfeaf41a46623e95df3dbc, type: 3}
-  _laserSoundVolume: 100
+  _laserSoundVolume: 1
   _yBoundPos: 8
   _yBoundNeg: -8
   _collidedWithPlayerEvent: {fileID: 11400000, guid: c3fa132afefb051089b30b82698b45f2,

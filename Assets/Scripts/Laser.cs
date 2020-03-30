@@ -18,7 +18,7 @@ public class Laser : MonoBehaviour
   private BoxCollider2D _col;
   private SpriteRenderer _sr;
   [SerializeField]
-  private float _laserSoundVolume = 2.0f;
+  private float _laserSoundVolume = 1.0f;
   void Start()
   {
     _rig = GetComponent<Rigidbody2D>();

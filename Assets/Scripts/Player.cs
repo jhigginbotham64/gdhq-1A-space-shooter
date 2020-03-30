@@ -51,11 +51,16 @@ public class Player : MonoBehaviour
   private bool _speedBoostActive = false;
   [SerializeField]
   private float _speedBoostMult = 2.0f;
+  [SerializeField]
+  private float _thrusterSpeedMult = 1.5f;
+
   void Move()
   {
+    float _speedMult = 1 * ((_speedBoostActive) ? _speedBoostMult : 1) * ((Input.GetKey(KeyCode.LeftShift)) ? _thrusterSpeedMult : 1);
+
     _moveDir.x = Input.GetAxis("Horizontal");
     _moveDir.y = Input.GetAxis("Vertical");
-    transform.Translate(_moveDir * _speed * ((_speedBoostActive) ? _speedBoostMult : 1) * Time.deltaTime);
+    transform.Translate(_moveDir * _speed * _speedMult * Time.deltaTime);
   }
 
   private float _xBoundNeg = -11;
