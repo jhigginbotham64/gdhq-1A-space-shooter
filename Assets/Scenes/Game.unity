@@ -432,6 +432,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8532856713336188468, guid: b3471e0d2826a517cbc75b8cb30d5469,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3471e0d2826a517cbc75b8cb30d5469, type: 3}
 --- !u!1 &334970196
@@ -967,6 +972,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2809976270640613290, guid: ab2a41ecb2e66c305bd1a613b4bd9550,
+        type: 3}
+      propertyPath: _playerSpawnedEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 38f052ec0c6dd5fc795fce1449416176,
+        type: 2}
     - target: {fileID: 2809976270640613291, guid: ab2a41ecb2e66c305bd1a613b4bd9550,
         type: 3}
       propertyPath: m_Name
@@ -1036,10 +1047,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9141710117653347385, guid: d18166bed32618204ae8705863c1739d,
+        type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9141710117653347385, guid: d18166bed32618204ae8705863c1739d,
+        type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -9141710117653347385, guid: d18166bed32618204ae8705863c1739d,
+        type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -9141710117653347385, guid: d18166bed32618204ae8705863c1739d,
+        type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1560897672}
+    - target: {fileID: -9141710117653347385, guid: d18166bed32618204ae8705863c1739d,
+        type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPlayerSpawned
+      objectReference: {fileID: 0}
+    - target: {fileID: -9141710117653347385, guid: d18166bed32618204ae8705863c1739d,
+        type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: -1656405556561152829, guid: d18166bed32618204ae8705863c1739d,
         type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -1656405556561152829, guid: d18166bed32618204ae8705863c1739d,
         type: 3}
@@ -1055,11 +1096,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1560897672}
     - target: {fileID: -1656405556561152829, guid: d18166bed32618204ae8705863c1739d,
         type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnHitTaken
+      value: OnPlayerDamageTaken
       objectReference: {fileID: 0}
     - target: {fileID: -1656405556561152829, guid: d18166bed32618204ae8705863c1739d,
         type: 3}
@@ -1224,7 +1265,7 @@ PrefabInstance:
     - target: {fileID: 7892198916187900529, guid: d18166bed32618204ae8705863c1739d,
         type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7892198916187900529, guid: d18166bed32618204ae8705863c1739d,
         type: 3}
@@ -1240,11 +1281,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1560897672}
     - target: {fileID: 7892198916187900529, guid: d18166bed32618204ae8705863c1739d,
         type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnPowerUpCollected
+      value: OnPlayerCollectedPowerUp
       objectReference: {fileID: 0}
     - target: {fileID: 7892198916187900529, guid: d18166bed32618204ae8705863c1739d,
         type: 3}

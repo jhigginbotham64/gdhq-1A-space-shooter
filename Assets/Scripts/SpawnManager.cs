@@ -9,6 +9,8 @@ public class SpawnManager : MonoBehaviour
   [SerializeField]
   private int _playerLivesRemaining = 3;
   [SerializeField]
+  private GameEvent _playerSpawnedEvent;
+  [SerializeField]
   private bool _spawning = true;
   [SerializeField]
   private GameObject _enemyContainer;
@@ -58,6 +60,7 @@ public class SpawnManager : MonoBehaviour
   void _spawnPlayerOne()
   {
     _spawnServer.createPlayer();
+    _playerSpawnedEvent.Raise();
   }
 
   IEnumerator _spawnPlayerOneDelayed()
